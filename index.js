@@ -2,8 +2,9 @@ var express=require('express');
 var app=express();
 var mongoose=require('mongoose');
 var bodyParser=require('body-parser');
+var hbs = require('express-handlebars')
 
-app.engine(' .hbs', hbs({
+app.engine('.hbs', hbs({
   defaultLayout: 'default',
   extname: '.hbs'
 }))
@@ -12,7 +13,7 @@ app.set('view engine', '.hbs')
 app.get('/api/login', (req, res) => {
 res.render('login')
 })
-app.get('/api', req, res) =>{
+app.get('/api', (req, res) =>{
   res.render('product')
 })
 
