@@ -36,7 +36,7 @@ app.get('/',function(req,res)
    res.send('My products');
 });
 
-app.get('/api/product', function(req, res)
+app.get('/api/product', auth function(req, res)
 {
 
     Product.getProduct(function(err,product)
@@ -62,7 +62,7 @@ app.get('/api/product/:productId', function(req, res)
     });
 });
 
-app.post('/api/product', function (req, res)
+app.post('/api/product', auth, function (req, res)
 {
 //    console.log(req.body);
 //    res.status(200).send({message:'El producto se ha recibido'});
@@ -81,7 +81,7 @@ app.post('/api/product', function (req, res)
     });
 });
 
-app.put('/api/product/:productId', function (req, res)
+app.put('/api/product/:productId', auth function (req, res)
 {
     var productId=req.params.productId;
     var product=req.body;
@@ -96,7 +96,7 @@ app.put('/api/product/:productId', function (req, res)
     });
 });
 
-app.delete('/api/product/:productId', function(req, res)
+app.delete('/api/product/:productId', auth function(req, res)
 {
     var productId=req.params.productId;
     Product.deleteProduct(productId,function(err,product)
