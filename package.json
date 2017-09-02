@@ -4,7 +4,7 @@
   "description": "api rest",
   "main": "index.js",
   "scripts": {
-	"start": "node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "lorena",
@@ -13,6 +13,7 @@
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "*",
     "express": "*",
+    "express-handlebars": "^3.0.0",
     "jwt-simple": "^0.5.1",
     "moment": "^2.18.1",
     "mongoose": "*"
