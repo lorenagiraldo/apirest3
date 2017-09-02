@@ -1,0 +1,19 @@
+{
+  "name": "apirest",
+  "version": "1.0.0",
+  "description": "api rest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lorena",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "*",
+    "express": "*",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.18.1",
+    "mongoose": "*"
+  }
+}
