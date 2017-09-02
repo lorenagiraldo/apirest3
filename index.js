@@ -23,7 +23,7 @@ userController = require('./controllers/user');
 
 auth = require('./middlewares/auth');
 
-mongoose.connect('mongodb://localhost/shop');
+mongoose.connect(config.db);
 var db=mongoose.Connection;
 
 app.use(bodyParser.urlencoded({extended: false}));
